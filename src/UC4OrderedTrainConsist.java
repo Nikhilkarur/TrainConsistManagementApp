@@ -1,0 +1,20 @@
+import java.util.LinkedList;
+
+public class UC4OrderedTrainConsist {
+    public static void main(String[] args) {
+        System.out.println("=== UC4: Maintain Ordered Bogie IDs ===");
+
+        LinkedList<String> consist = new LinkedList<>();
+        consist.add("Engine");
+        consist.add("Sleeper");
+        consist.add("AC");
+        consist.add("Cargo");
+        consist.add("Guard");
+
+        consist.add(2, "Pantry Car");
+        consist.removeFirst();
+        consist.removeLast();
+
+        System.out.println("Final ordered train consist: " + consist);
+    }
+}
